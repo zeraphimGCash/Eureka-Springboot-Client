@@ -31,6 +31,11 @@ public class ClientJcDiamanteApplication implements Controller {
 		return List.of();
 	}
 
+	@Override
+	public String infoPage() {
+		return "{ \"endpoints\": [ \"/hello\", \"/books\" ] }";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(ClientJcDiamanteApplication.class, args);
 	}
